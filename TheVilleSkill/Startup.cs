@@ -119,7 +119,7 @@ namespace TheVilleSkill
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint(env.IsDevelopment() ? "v1/swagger.json" : "swagger/v1/swagger.json", "The Ville Skill API V1");
+                c.SwaggerEndpoint(env.IsDevelopment() ? "v1/swagger.json" : "/swagger/v1/swagger.json", "The Ville Skill API V1");
             });
 
             app.UseStaticFiles();

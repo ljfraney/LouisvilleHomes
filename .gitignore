@@ -261,3 +261,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/TheVilleSkill/appsettings.Development.json
+/TheVilleSkill/appsettings.Production.json
+/TheVilleSkill/aws-beanstalk-tools-defaults.json

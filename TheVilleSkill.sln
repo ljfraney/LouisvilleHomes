@@ -5,7 +5,12 @@ VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheVilleSkill", "TheVilleSkill\TheVilleSkill.csproj", "{392FA388-FC5A-408C-BAB4-39C63BABF75E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheVilleSkill.Tests", "TheVilleSkill.Tests\TheVilleSkill.Tests.csproj", "{EBE709A1-D876-4BB6-A877-B6F32EC8B62B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheVilleSkill.Tests", "TheVilleSkill.Tests\TheVilleSkill.Tests.csproj", "{EBE709A1-D876-4BB6-A877-B6F32EC8B62B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F8D2119B-2344-47E8-80D9-38E8BD7DE441}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

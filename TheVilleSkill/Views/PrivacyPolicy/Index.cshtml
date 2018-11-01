@@ -1,7 +1,7 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
+@inject Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnv
 
 <!DOCTYPE html>
 <html>
@@ -22,13 +22,17 @@
 
     <p>Josh Franey ("I", "me", or "my") operates The Ville Skill (the "Service").</p>
 
-    <p>Requests made to the Service (i.e. questions asked while using the Service) are collected for quality improvement
-    purposes. All information collected will be used to improve the Service.</p>
+    <p>
+        Requests made to the Service (i.e. questions asked while using the Service) are collected for quality improvement
+        purposes. All information collected will be used to improve the Service.
+    </p>
 
-    <p>By (optionally) granting the Service permission to read the Address that you have associated with your device, you
-    unlock the ability for the service to deliver contextual information based on this address. This will allow you to ask 
-    questions including, but not limited to, "Who owns my house?" and "What is my home worth?" without speaking the
-    address.</p>
+    <p>
+        By (optionally) granting the Service permission to read the Address that you have associated with your device, you
+        unlock the ability for the service to deliver contextual information based on this address. This will allow you to ask
+        questions including, but not limited to, "Who owns my house?" and "What is my home worth?" without speaking the
+        address.
+    </p>
 
     <h2>Use of Data</h2>
 
@@ -43,17 +47,25 @@
 
     <h2>Transfer Of Data</h2>
 
-    <p>Your information, including Personal Data, may be transferred to — and maintained on — computers located outside 
-    of your state, province, country or other governmental jurisdiction where the data protection laws may differ than
-    those from your jurisdiction.</p>
-    <p>If you are located outside United States and choose to provide information to us, please note that I transfer the 
-    data, including Personal Data, to United States and process it there.</p>
-    <p>Your consent to this Privacy Policy followed by your submission of such information represents your agreement to
-    that transfer.</p>
-    <p>The Ville Skill will take all steps reasonably necessary to ensure that your data is treated securely and in
-    accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a
-    country unless there are adequate controls in place including the security of your data and other personal
-    information.</p>
+    <p>
+        Your information, including Personal Data, may be transferred to — and maintained on — computers located outside
+        of your state, province, country or other governmental jurisdiction where the data protection laws may differ than
+        those from your jurisdiction.
+    </p>
+    <p>
+        If you are located outside United States and choose to provide information to us, please note that I transfer the
+        data, including Personal Data, to United States and process it there.
+    </p>
+    <p>
+        Your consent to this Privacy Policy followed by your submission of such information represents your agreement to
+        that transfer.
+    </p>
+    <p>
+        The Ville Skill will take all steps reasonably necessary to ensure that your data is treated securely and in
+        accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a
+        country unless there are adequate controls in place including the security of your data and other personal
+        information.
+    </p>
 
     <h2>Disclosure Of Data</h2>
 
@@ -69,34 +81,51 @@
 
     <h2>Security Of Data</h2>
 
-    <p>The security of your data is of upmost importance to me, but remember that no method of transmission over the Internet,
-    or method of electronic storage is 100% secure. While I strive to use commercially acceptable means to protect your Personal
-    Data, I cannot guarantee its absolute security.</p>
+    <p>
+        The security of your data is of upmost importance to me, but remember that no method of transmission over the Internet,
+        or method of electronic storage is 100% secure. While I strive to use commercially acceptable means to protect your Personal
+        Data, I cannot guarantee its absolute security.
+    </p>
 
     <h2>Service Providers</h2>
 
-    <p>I may employ third party companies and individuals to facilitate my Service ("Service Providers"), to provide the Service 
-    on my behalf, to perform Service-related services or to assist me in analyzing how my Service is used.</p>
-    <p>These third parties have access to your Personal Data only to perform these tasks on my behalf and are obligated not to 
-    disclose or use it for any other purpose.</p>
+    <p>
+        I may employ third party companies and individuals to facilitate my Service ("Service Providers"), to provide the Service
+        on my behalf, to perform Service-related services or to assist me in analyzing how my Service is used.
+    </p>
+    <p>
+        These third parties have access to your Personal Data only to perform these tasks on my behalf and are obligated not to
+        disclose or use it for any other purpose.
+    </p>
 
     <h2>Children's Privacy</h2>
 
     <p>My Service does not address anyone under the age of 18 ("Children").</p>
-    <p>I do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or 
-    guardian and you are aware that your child has provided me with Personal Data, please contact me. If I become aware that 
-    I have collected Personal Data from children without verification of parental consent, I will take steps to remove that
-    information from my servers.</p>
+    <p>
+        I do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or
+        guardian and you are aware that your child has provided me with Personal Data, please contact me. If I become aware that
+        I have collected Personal Data from children without verification of parental consent, I will take steps to remove that
+        information from my servers.
+    </p>
 
     <h2>Changes To This Privacy Policy</h2>
 
-    <p>I may update my Privacy Policy from time to time. I will notify you of any changes by posting the new Privacy Policy on 
-    this page.</p>
-    <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective
-    when they are posted on this page.</p>
+    <p>
+        I may update my Privacy Policy from time to time. I will notify you of any changes by posting the new Privacy Policy on
+        this page.
+    </p>
+    <p>
+        You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective
+        when they are posted on this page.
+    </p>
 
     <h2>Contact Me</h2>
-    <p>If you have any questions about this Privacy Policy, please contact me by email:
-    <a href="mailto:thevilleskill@outlook.com">thevilleskill@outlook.com</a></p>
+    <p>
+        If you have any questions about this Privacy Policy, please contact me by email:
+        <a href="mailto:thevilleskill@outlook.com">thevilleskill@outlook.com</a>
+    </p>
 </body>
 </html>
+
+<br /><br /><br />
+<small style="color: lightgrey">Env: @hostingEnv.EnvironmentName</small>
