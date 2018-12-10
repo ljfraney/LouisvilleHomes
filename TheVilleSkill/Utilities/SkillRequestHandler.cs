@@ -8,6 +8,7 @@ using TheVilleSkill.Models.Alexa.CustomSlots;
 using TheVilleSkill.Models.GoogleMaps;
 using TheVilleSkill.Models.PVA;
 using TheVilleSkill.Utilities.GoogleMaps;
+using TheVilleSkill.Utilities.HttpClients;
 using TheVilleSkill.Utilities.PVA;
 using TheVilleSkill.Utilities.Repositories;
 

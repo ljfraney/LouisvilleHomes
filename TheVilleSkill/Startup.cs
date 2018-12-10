@@ -16,6 +16,8 @@ using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
+using TheVilleSkill.Utilities.HttpClients;
+using TheVilleSkill.Models.Eventful;
 
 namespace TheVilleSkill
 {
@@ -52,6 +54,10 @@ namespace TheVilleSkill
             var sheriffSettings = new SheriffSettings();
             Configuration.Bind("SheriffSettings", sheriffSettings);
             services.AddSingleton(sheriffSettings);
+
+            var eventfulSettings = new EventfulSettings();
+            Configuration.Bind("EventfulSettings", eventfulSettings);
+            services.AddSingleton(eventfulSettings);
 
             var cacheSettings = new CacheSettings();
             Configuration.Bind("CacheSettings", cacheSettings);
@@ -92,6 +98,8 @@ namespace TheVilleSkill
             services.AddScoped<IZipCodeRepository, ZipCodeRepository>();
 
             services.AddHttpClient<IDeviceApiHttpClient, DeviceApiHttpClient>();
+
+            services.AddHttpClient<IEventfulHttpClient, EventfulHttpClient>();
 
             services.AddSingleton<IMapImageUrlGenerator, MapImageUrlGenerator>();
 

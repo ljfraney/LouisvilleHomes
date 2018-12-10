@@ -9,11 +9,12 @@ using TheVilleSkill.Utilities;
 using TheVilleSkill.Utilities.Repositories;
 using Xunit;
 
-namespace TheVilleSkill.Tests
+namespace TheVilleSkill.Tests.Unit.Utilities.Repositories
 {
     public class AddressRepositoryTests
     {
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task Get_ReturnsNonExpiredAttributes()
         {
             const string nowString = "10/31/2018 10:54:30";

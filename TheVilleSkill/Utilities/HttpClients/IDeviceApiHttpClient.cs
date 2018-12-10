@@ -2,7 +2,7 @@
 using TheVilleSkill.Models.Alexa;
 using System.Threading.Tasks;
 
-namespace TheVilleSkill.Utilities
+namespace TheVilleSkill.Utilities.HttpClients
 {
     public interface IDeviceApiHttpClient
     {

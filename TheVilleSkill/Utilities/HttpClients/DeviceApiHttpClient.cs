@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace TheVilleSkill.Utilities
+namespace TheVilleSkill.Utilities.HttpClients
 {
     public class DeviceApiHttpClient : IDeviceApiHttpClient
     {
