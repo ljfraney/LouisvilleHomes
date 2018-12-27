@@ -264,3 +264,4 @@ __pycache__/
 /TheVilleSkill/appsettings.Development.json
 /TheVilleSkill/appsettings.Production.json
 /TheVilleSkill/aws-beanstalk-tools-defaults.json
+/TheVilleSkill/appsettings.secrets.json

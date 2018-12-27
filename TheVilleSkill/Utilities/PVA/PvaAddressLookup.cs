@@ -46,6 +46,8 @@ namespace TheVilleSkill.Utilities.PVA
             var maxScore = addressParsings.Max(p => p.Score);
             var bestParsing = addressParsings.First(p => p.Score == maxScore);
 
+            propertyInfo.Address = bestParsing.Address;
+
             // See if the address exists in the database...
             var savedAddress = await _addressRepository.Get(bestParsing.Address.Number, bestParsing.Address.Direction, bestParsing.Address.Street, bestParsing.Address.Tag);
 
